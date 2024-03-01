@@ -1,0 +1,11 @@
+class Solution
+{
+    public:
+    int peakElement(int arr[], int n)
+    {
+       // Your code here
+        int index = 0;
+        while (index != n - 1 && arr[index] <= arr[index + 1]) index ++;
+        return index;
+    }
+};
